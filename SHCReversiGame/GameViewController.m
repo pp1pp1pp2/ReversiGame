@@ -59,6 +59,7 @@
 
 - (IBAction)startVsComputerGame:(id)sender
 {
+    [[MyBaseConfig sharedInstance] showAdvertisment];
   [_board setToInitialState];
   if (!_computer) {
   _computer = [[ComputerOpponent alloc] initWithBoard:_board

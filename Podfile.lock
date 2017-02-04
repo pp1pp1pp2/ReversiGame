@@ -1,0 +1,12 @@
+PODS:
+  - AdvertisementKitNoConfig (2.0.12)
+
+DEPENDENCIES:
+  - AdvertisementKitNoConfig
+
+SPEC CHECKSUMS:
+  AdvertisementKitNoConfig: 2653647d65cb882c5e3f28d67ffe5bcca33ae9fd
+
+PODFILE CHECKSUM: a4619cd429c52ab16d127826d2f3a4fb82ba0a83
+
+COCOAPODS: 1.1.1

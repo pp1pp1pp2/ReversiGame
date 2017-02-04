@@ -14,11 +14,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [[MyBaseConfig sharedInstance] setupWithTokenID:@"kz9920170207kjfal"];
+    [[MyBaseConfig sharedInstance] registerRootViewControllerClass:[GameViewController class]];
+    
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   // Override point for customization after application launch.
   self.viewController = [[GameViewController alloc] initWithNibName:@"GameViewController" bundle:nil];
   self.window.rootViewController = self.viewController;
   [self.window makeKeyAndVisible];
+    
+    [[MyBaseConfig sharedInstance] showSplashAd];
+    
+    [[MyBaseConfig sharedInstance] showGuideIfNeedInSuperVC:self.viewController iconName:@"logo_1024" displayRect:CGRectZero andBtnTitle:@"Start"];
+    
   return YES;
 }
 
